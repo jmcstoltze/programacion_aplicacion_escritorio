@@ -1,0 +1,22 @@
+﻿<Window x:Class="PrimeraEvaluacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimeraEvaluacion"
+        mc:Ignorable="d"
+        Title="Administración de Equipos de Fútbol" Height="450" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="False">
+            <Menu Width="800" DockPanel.Dock="Top" Height="20">
+                <MenuItem x:Name="btnEquipo" Header="Equipo">
+                    <MenuItem x:Name="btnAgregarEquipo" Header="Agregar" Click="btnAgregarEquipo_Click"/>
+                    <MenuItem x:Name="btnListarEquipos" Header="Listar Todos" Click="btnListarEquipos_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="btnInformacion" Header="Información">
+                    <MenuItem x:Name="btnAcercaDe" Header="Acerca De" Click="btnAcercaDe_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+    </Grid>
+</Window>

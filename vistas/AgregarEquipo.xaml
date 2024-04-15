@@ -1,0 +1,30 @@
+﻿<Window x:Class="PrimeraEvaluacion.vistas.AgregarEquipo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimeraEvaluacion.vistas"
+        mc:Ignorable="d"
+        Title="Agregar Equipo" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Formulario de Ingreso" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+
+        <Label x:Name="lblNombreEquipo" Content="Nombre del Equipo:" HorizontalAlignment="Left" Margin="90,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCantidadJugadores" Content="Cantidad de Jugadores:" HorizontalAlignment="Left" Margin="90,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNombreDT" Content="Nombre del DT:" HorizontalAlignment="Left" Margin="90,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTipoEquipo" Content="Tipo de Equipo:" HorizontalAlignment="Left" Margin="90,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCapitanEquipo" Content="Capitán del Equipo:" HorizontalAlignment="Left" Margin="90,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTieneSub21" Content="Cuenta con Jugadores Sub 21:" HorizontalAlignment="Left" Margin="90,230,0,0" VerticalAlignment="Top"/>
+        
+        <TextBox x:Name="txtNombreEquipo" HorizontalAlignment="Left" Margin="300,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="txtCantidadJugadores" HorizontalAlignment="Left" Margin="300,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" PreviewTextInput="CheckTextInput"/>
+        <TextBox x:Name="txtNombreDT" HorizontalAlignment="Left" Margin="300,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="txtTipoEquipo" HorizontalAlignment="Left" Margin="300,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="txtCapitanEquipo" HorizontalAlignment="Left" Margin="300,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380"/>
+
+        <CheckBox x:Name="ckTieneSub21" Content="tiene" HorizontalAlignment="Left" Margin="300,237,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="btnAgregarEquipo" Content="Agregar Equipo" HorizontalAlignment="Left" Margin="150,280,0,0" VerticalAlignment="Top" Width="200" Click="btnAgregarEquipo_Click"/>
+        <Button x:Name="btnVolverAlMenu" Content="Volver al menú principal" HorizontalAlignment="Left" Margin="425,280,0,0" VerticalAlignment="Top" Width="200" Click="btnVolverAlMenu_Click"/>
+    </Grid>
+</Window>
